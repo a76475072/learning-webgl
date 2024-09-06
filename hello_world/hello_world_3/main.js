@@ -110,30 +110,30 @@ function updateGlCanvas() {
 			// vertex 1
 			bufferData[bufferDataIdx++] = xCur;
 			bufferData[bufferDataIdx++] = yCur;
-			bufferData[bufferDataIdx++] = CELL_COLOR_R;
-			bufferData[bufferDataIdx++] = CELL_COLOR_G;
-			bufferData[bufferDataIdx++] = CELL_COLOR_B;
+			bufferData[bufferDataIdx++] = 1;
+			bufferData[bufferDataIdx++] = 0;
+			bufferData[bufferDataIdx++] = 0;
 
 			// vertex 2
 			bufferData[bufferDataIdx++] = xCur + xDelta;
 			bufferData[bufferDataIdx++] = yCur;
-			bufferData[bufferDataIdx++] = CELL_COLOR_R;
-			bufferData[bufferDataIdx++] = CELL_COLOR_G;
-			bufferData[bufferDataIdx++] = CELL_COLOR_B;
+			bufferData[bufferDataIdx++] = 0;
+			bufferData[bufferDataIdx++] = 1;
+			bufferData[bufferDataIdx++] = 0;
 
 			// vertex 3
 			bufferData[bufferDataIdx++] = xCur;
 			bufferData[bufferDataIdx++] = yCur - yDelta;
-			bufferData[bufferDataIdx++] = CELL_COLOR_R;
-			bufferData[bufferDataIdx++] = CELL_COLOR_G;
-			bufferData[bufferDataIdx++] = CELL_COLOR_B;
+			bufferData[bufferDataIdx++] = 0;
+			bufferData[bufferDataIdx++] = 0;
+			bufferData[bufferDataIdx++] = 1;
 
 			// vertex 4
 			bufferData[bufferDataIdx++] = xCur + xDelta;
 			bufferData[bufferDataIdx++] = yCur - yDelta;
-			bufferData[bufferDataIdx++] = CELL_COLOR_R;
-			bufferData[bufferDataIdx++] = CELL_COLOR_G;
-			bufferData[bufferDataIdx++] = CELL_COLOR_B;
+			bufferData[bufferDataIdx++] = 1;
+			bufferData[bufferDataIdx++] = 0;
+			bufferData[bufferDataIdx++] = 1;
 
 			// update indices
 			elementIndexData[elemDataIdx++] = vertexCnt;
