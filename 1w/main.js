@@ -98,7 +98,6 @@ function updateGlCanvas() {
 	elemDataIdx = 0;
 
 	var squareCnt = 0;
-	var vertexCnt = 0;
 
 	for(var i = 0; i < gameData.length; ++i) {
 		for(var j = 0; j < gameData[i].length; ++j) {
@@ -144,7 +143,6 @@ function updateGlCanvas() {
 			elementIndexData[elemDataIdx++] = vertexCnt + 3;
 
 			xCur += xDelta;
-			vertexCnt += 4;
 			squareCnt++;
 		}
 
