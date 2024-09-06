@@ -59,46 +59,8 @@ if(!gl.getProgramParameter(program, gl.LINK_STATUS)) {
 
 gl.useProgram(program);
 
-// const bufferStride = 2 /*x, y*/ + 3 /*color*/;
-// const bufferData = new Float32Array(
-// 	FIELD_SIZE * 
-// 	FIELD_SIZE *
-// 	bufferStride
-// );
-
-// const bufferData = new Float32Array([
-// 	-1,0,     1,0,0,
-// 	-1,1,      0,1,0,
-// 	0,1,       0,0,1,
-// 	0,0,      .3,0,.7,
-// ]);
-
-// const elementIndexData = new Uint8Array([
-// 	0,1,2,
-// 	0,2,3
-// ]);
-
 const bufferData = new Float32Array(1234);
 const elementIndexData = new Uint8Array(1234);
-
-// const POS_ATTRIB_LOC = 0;
-// const COLOR_ATTRIB_LOC = 1;
-
-// const buffer = gl.createBuffer();
-// gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
-// gl.bufferData(gl.ARRAY_BUFFER, bufferData, gl.STATIC_DRAW);
-
-// const elementIndexBuffer = gl.createBuffer();
-// gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, elementIndexBuffer);
-// gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, elementIndexData, gl.STATIC_DRAW);
-
-// gl.vertexAttribPointer(POS_ATTRIB_LOC, 2, gl.FLOAT, false, 5 * 4, 0);
-// gl.vertexAttribPointer(COLOR_ATTRIB_LOC, 3, gl.FLOAT, false, 5 * 4, 2 * 4);
-
-// gl.enableVertexAttribArray(POS_ATTRIB_LOC);
-// gl.enableVertexAttribArray(COLOR_ATTRIB_LOC);
-
-// gl.drawElements(gl.TRIANGLES, 6, gl.UNSIGNED_BYTE, 0);
 
 // run shit
 window.setInterval(() => {gameTick();}, 1000);
@@ -144,37 +106,6 @@ function updateGlCanvas() {
 				xCur += xDelta;
 				continue;
 			}
-
-			// bufferData[bufferDataIdx++] = -1;
-			// bufferData[bufferDataIdx++] = 0;
-			// bufferData[bufferDataIdx++] = 1;
-			// bufferData[bufferDataIdx++] = 0;
-			// bufferData[bufferDataIdx++] = 0;
-
-			// bufferData[bufferDataIdx++] = -1;
-			// bufferData[bufferDataIdx++] = 1;
-			// bufferData[bufferDataIdx++] = 1;
-			// bufferData[bufferDataIdx++] = 0;
-			// bufferData[bufferDataIdx++] = 0;
-
-			// bufferData[bufferDataIdx++] = 0;
-			// bufferData[bufferDataIdx++] = 1;
-			// bufferData[bufferDataIdx++] = 1;
-			// bufferData[bufferDataIdx++] = 0;
-			// bufferData[bufferDataIdx++] = 0;
-
-			// bufferData[bufferDataIdx++] = 0;
-			// bufferData[bufferDataIdx++] = 0;
-			// bufferData[bufferDataIdx++] = 1;
-			// bufferData[bufferDataIdx++] = 0;
-			// bufferData[bufferDataIdx++] = 0;
-
-			// elementIndexData[elemDataIdx++] = 0;
-			// elementIndexData[elemDataIdx++] = 1;
-			// elementIndexData[elemDataIdx++] = 2;
-			// elementIndexData[elemDataIdx++] = 0;
-			// elementIndexData[elemDataIdx++] = 2;
-			// elementIndexData[elemDataIdx++] = 3;
 
 			// vertex 1
 			bufferData[bufferDataIdx++] = xCur;
